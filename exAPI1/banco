@@ -1,0 +1,12 @@
+CREATE DATABASE apiestilorei;
+USE apiestilorei;
+show tables;
+
+INSERT INTO cliente(nome,telefone)values('luiz','61981458969');
+INSERT INTO cliente(nome,telefone)values('maria','61981458969');
+INSERT INTO cliente(nome,telefone)values('joãozinho','61981458969');
+INSERT INTO cliente(nome,telefone)values('Jacobson','61981148503');
+INSERT INTO cliente(nome,telefone)values('Thamires','61981148503');
+INSERT INTO cliente(nome,telefone)values('Raposo','61981148503');
+
+select * from cliente;

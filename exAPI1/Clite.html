@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API estiloi do rei</title>
+</head>
+<body>
+     <h3 id="nome"></h3>
+     <h3 id="telefone"></h3>
+
+     <script >
+           fetch('http://127.0.0.1:5000/getcliente')
+
+        .then(response => response.json())
+        .then(data =>{
+            document.getElementById('nome').textContent = data.nome;
+            document.getElementById('telefone').textContent = data.telefone;
+        })
+        .catch(error => {
+            console.error('Erro ao consumir a API: ', error)
+        })
+        nome = document.getElementById("nome")
+        telefone = document.getElementById("telefone")
+
+        /*Construir API */
+     </script>
+</body>
+</html>
